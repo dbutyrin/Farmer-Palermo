@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/style.min.css">
+  @@include( 'critical/_home-critical-css.html' )
+  <link rel="preload" href="css/style.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="css/style.min.css" rel="stylesheet">
+  </noscript>
+  <script>
+    /*loadCss*/
+    !function(e){"use strict";var n=function(n,t,o){function i(){a.addEventListener&&a.removeEventListener("load",i),a.media=o||"all"}var r,d=e.document,a=d.createElement("link");if(t)r=t;else{var l=(d.body||d.getElementsByTagName("head")[0]).childNodes;r=l[l.length-1]}var s=d.styleSheets;a.rel="stylesheet",a.href=n,a.media="only x",function e(n){return d.body?n():void setTimeout(function(){e(n)})}(function(){r.parentNode.insertBefore(a,t?r:r.nextSibling)});var f=function(e){for(var n=a.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){f(e)})};return a.addEventListener&&a.addEventListener("load",i),a.onloadcssdefined=f,f(i),a};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+    /*link[rel=preload] polyfill*/
+    !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),n=0;n<e.length;n++){var r=e[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(t.loadCSS(r.href,r),r.rel=null)}},!e.support()){e.poly();var n=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){t.clearInterval(n)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(n)})}}}(this);
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script defer src="js/main.min.js"></script>
+</head>
+<body class="body">
+  @@include( '_header.html' )
+  @@include( '_footer.html' )
+</body>
+</html>
