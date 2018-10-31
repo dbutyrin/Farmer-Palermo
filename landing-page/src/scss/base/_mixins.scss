@@ -1,0 +1,23 @@
+@mixin retina-bg (
+  $image-name,
+  $format,
+  $bg-size: null,
+  $dprArr: $retina-dpr,
+  $path: $retina-bg-path
+) {
+  background-image: url("#{$path}#{$image-name}.#{$format}");
+  background-size: $bg-size;
+
+  @each $dpr in $dprArr {
+    @media (min-resolution: #{$dpr}dppx), (min-resolution: #{$dpr * 96}dpi) {
+      background-image: url("#{$path}#{$image-name}@#{$dpr}x.#{$format}");
+    }
+  }
+}
+
+@mixin max-width-center ($max-width: $max-width, $side-indent: $side-indent) {
+  max-width: $max-width;
+  padding-left: $side-indent;
+  padding-right: $side-indent;
+  margin: auto;
+}

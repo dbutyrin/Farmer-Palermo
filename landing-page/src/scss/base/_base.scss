@@ -1,0 +1,55 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: $root-fz;
+}
+
+.body {
+  font-family: $main-font;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: $color-black;
+  background-color: $color-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+
+  @media (max-width: $desktop-s) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: $mobile-m) {
+    font-size: 1.4rem;
+  }
+}
+
+h1 {
+  font-family: $secondary-font;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input, textarea {
+  background: transparent;
+  border: none;
+  appearance: none;
+  font: inherit;
+}
+
+textarea {
+  overflow: auto;
+}
+
+button {
+  cursor: pointer;
+}
