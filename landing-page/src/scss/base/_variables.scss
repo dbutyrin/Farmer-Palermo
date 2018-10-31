@@ -12,6 +12,7 @@ $retina-dpr: (1.5, 2, 3);
 
 $color-black: #1d1c1d;
 $color-white: #fff;
+$color-red: #f00;
 
 $desktop-l: 1680px;
 $desktop-m: 1366px;
@@ -20,3 +21,6 @@ $tablet-l: 1024px;
 $tablet-m: 768px;
 $mobile-m: 640px;
 $mobile-s: 480px;
+
+$test1: 1px solid $color-red;
+$test2: rgba(100, 0, 0, .2);
