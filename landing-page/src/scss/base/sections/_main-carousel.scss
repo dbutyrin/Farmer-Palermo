@@ -1,6 +1,11 @@
 .main-carousel {
   .slide {
     height: 100vh;
+    background-position: right center;
+
+    @media (max-width: $width-S) {
+      background-position: 85% center;
+    }
 
     h1 {
       position: absolute;
@@ -12,19 +17,41 @@
 
 .slick-arrow {
   z-index: $z-index-low;
-  height: 100px;
-  width: 100px;
-  top: 50%;
   transform: translateY(-50%);
   border: $test1;
+  height: 100px;
+  width: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 37.5px;
+    left: 42px;
+    height: 25px;
+    width: 16px;
+    background: url("/images/arrow-button-white.svg") no-repeat center center;
+    background-size: cover;
+  }
 }
 
 .slick-prev {
   left: 100px;
+
+  @media (max-width: $width-L) {
+    left: 50px;
+  }
+
+  &::before {
+    transform: scaleX(-1);
+  }
 }
 
 .slick-next {
   right: 100px;
+
+  @media (max-width: $width-L) {
+    right: 50px;
+  }
 }
 
 .slick-dotted.slick-slider {

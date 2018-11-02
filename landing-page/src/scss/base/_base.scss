@@ -59,6 +59,10 @@ button {
 .container {
   max-width: 1920px;
   padding: 0 100px;
+
+  @media (max-width: $width-S) {
+    padding: 0;
+  }
 }
 
 .carousel {
@@ -67,7 +71,7 @@ button {
   .slide {
     position: relative;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center center;
     background-size: cover;
   }
 }

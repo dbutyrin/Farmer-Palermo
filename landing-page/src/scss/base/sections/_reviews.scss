@@ -19,6 +19,14 @@
       padding: 60px;
       text-align: center;
       background: $color-white;
+
+      @media (max-width: $width-S) {
+        padding: 35px;
+      }
+
+      @media (max-width: $width-XS) {
+        padding: 10px;
+      }
     }
   }
 
@@ -27,6 +35,14 @@
 
     article {
       padding: 70px;
+
+      @media (max-width: $width-S) {
+        padding: 40px;
+      }
+
+      @media (max-width: $width-XS) {
+        padding: 15px;
+      }
     }
   }
 
