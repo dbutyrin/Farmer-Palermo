@@ -3,6 +3,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 140px;
 
   @media (max-width: $desktop-l) {
     padding: 40px;
@@ -13,12 +14,8 @@
   }
 
   > * {
-    margin: 40px;
+    margin: 20px 0;
     border-radius: 5px;
-
-    @media (max-width: $desktop-l) {
-      margin: 40px 0;
-    }
   }
 
   h3 {
@@ -29,10 +26,13 @@
     height: auto;
     width: 45%;
     padding: 60px 44px;
+    margin-right: 2vw;
     background: $color-white;
+    flex-grow: 1;
 
     @media (max-width: $tablet-l) {
       width: 100%;
+      margin-right: 0;
     }
   }
 }
@@ -40,12 +40,13 @@
 .about-carousel {
   overflow: hidden;
   height: 500px;
-  width: 43%;
+  width: 42%;
 
   @media (max-width: $tablet-l) {
     height: 600px;
     width: 100%;
   }
+
   div {
     height: 100%;
     width: 100%;

@@ -39,11 +39,5 @@
 
   .slick-dots {
     bottom: -50px;
-
-    li button::before {
-      content: "";
-      background: $color-red;
-      border-radius: 50px;
-    }
   }
 }
