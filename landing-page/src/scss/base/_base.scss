@@ -7,13 +7,12 @@
 }
 
 .body {
-  padding: 20px 0 64px;
   font-family: $main-font;
   font-size: 1.8rem;
   line-height: 1.4;
   font-weight: 300;
   color: $color-black;
-  background-color: $color-white;
+  background-color: $color-background;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
@@ -29,6 +28,8 @@
 
 h1 {
   font-family: $secondary-font;
+  text-align: center;
+  padding: 20px;
 }
 
 a {
@@ -58,4 +59,15 @@ button {
 .container {
   max-width: 1920px;
   padding: 0 100px;
+}
+
+.carousel {
+  position: relative;
+
+  .slide {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+  }
 }

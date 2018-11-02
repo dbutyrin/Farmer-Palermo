@@ -1,0 +1,42 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.reviews-carousel {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+
+  .slide {
+    border: $test1;
+    opacity: .6;
+
+    article {
+      margin: 20px;
+      padding: 60px;
+      text-align: center;
+      background: $color-white;
+    }
+  }
+
+  .slick-center .slide {
+    opacity: 1;
+
+    article {
+      padding: 70px;
+    }
+  }
+
+  .slick-dots {
+    bottom: -50px;
+
+    li button::before {
+      content: "";
+      background: $color-red;
+      border-radius: 50px;
+    }
+  }
+}

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   @@include( 'critical/_home-critical-css.html' )
   <link rel="preload" href="css/style.min.css" as="style" onload="this.rel='stylesheet'">
+
   <noscript>
 	<link href="css/style.min.css" rel="stylesheet">
   </noscript>
@@ -18,11 +19,11 @@
 	!function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),n=0;n<e.length;n++){var r=e[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(t.loadCSS(r.href,r),r.rel=null)}},!e.support()){e.poly();var n=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){t.clearInterval(n)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(n)})}}}(this);
   </script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script defer type="text/javascript" src="js/slick.min.js"></script>
   <script defer src="js/main.min.js"></script>
 </head>
 <body class="body">
-  @@include( '_header.html')
-  @@include( '_main-carousel.html')
+  <!-- @@include( '_header.html') -->
   @@include( '_main.html')
   @@include( '_footer.html' )
 </body>

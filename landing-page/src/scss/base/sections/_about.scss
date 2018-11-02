@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    margin: 40px;
+    border-radius: 5px;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  article {
+    height: auto;
+    width: 45%;
+    padding: 60px 44px;
+    background: $color-white;
+  }
+}
+
+.about-carousel {
+  overflow: hidden;
+  height: 500px;
+  width: 43%;
+
+  div {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slick-arrow {
+    z-index: $z-index-low;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: $test1;
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+}
