@@ -35,19 +35,14 @@ $(document).ready(function () {
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 1560,
+        breakpoint: 1680,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '80px',
-          slidesToShow: 1
+          arrows: false
         }
       },
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
-          centerMode: true,
           centerPadding: '60px',
           slidesToShow: 1
         }
@@ -55,6 +50,7 @@ $(document).ready(function () {
       {
         breakpoint: 480,
         settings: {
+          dots: true,
           arrows: false,
           centerMode: true,
           centerPadding: '40px',

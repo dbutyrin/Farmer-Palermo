@@ -4,16 +4,24 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: $desktop-l) {
+    padding: 40px;
+  }
+
+  @media (max-width: $mobile-s) {
+    padding: 0;
+  }
+
   > * {
     margin: 40px;
     border-radius: 5px;
 
-    @media (max-width: $width-XS) {
+    @media (max-width: $desktop-l) {
       margin: 40px 0;
     }
   }
 
-  h1 {
+  h3 {
     width: 100%;
   }
 
@@ -23,7 +31,7 @@
     padding: 60px 44px;
     background: $color-white;
 
-    @media (max-width: $width-L) {
+    @media (max-width: $tablet-l) {
       width: 100%;
     }
   }
@@ -34,11 +42,10 @@
   height: 500px;
   width: 43%;
 
-  @media (max-width: $width-L) {
+  @media (max-width: $tablet-l) {
     height: 600px;
     width: 100%;
   }
-
   div {
     height: 100%;
     width: 100%;
@@ -47,7 +54,7 @@
   .slick-prev {
     left: 20px;
 
-    @media (max-width: $width-S) {
+    @media (max-width: $tablet-m) {
       left: 0;
     }
   }
@@ -55,7 +62,7 @@
   .slick-next {
     right: 20px;
 
-    @media (max-width: $width-S) {
+    @media (max-width: $tablet-m) {
       right: 0;
     }
   }
