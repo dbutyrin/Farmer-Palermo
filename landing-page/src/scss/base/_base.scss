@@ -32,6 +32,11 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+h3 {
+  width: 100%;
+  margin: 100px 0;
+}
+
 a {
   color: currentColor;
   text-decoration: none;
@@ -59,9 +64,14 @@ button {
 .container {
   max-width: 1920px;
   padding: 0 100px;
+  margin: 0 auto;
 
-  @media (max-width: $tablet-m) {
-    padding: 0;
+  @media (max-width: $desktop-l) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: $mobile-s) {
+    padding: 0 10px;
   }
 }
 

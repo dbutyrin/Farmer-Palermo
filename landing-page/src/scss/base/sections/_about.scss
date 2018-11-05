@@ -3,18 +3,17 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 140px;
+  padding: 0 140px;
 
   @media (max-width: $desktop-l) {
-    padding: 40px;
+    padding: 0 40px;
   }
 
   @media (max-width: $mobile-s) {
-    padding: 0;
+    padding: 0 10px;
   }
 
   > * {
-    margin: 20px 0;
     border-radius: 5px;
   }
 
@@ -33,6 +32,7 @@
     @media (max-width: $tablet-l) {
       width: 100%;
       margin-right: 0;
+      margin-bottom: 30px;
     }
   }
 }
@@ -67,4 +67,35 @@
       right: 0;
     }
   }
+}
+
+.badges-container {
+  width: 100%;
+  margin-top: 95px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.badge-link {
+  line-height: 0;
+
+  @media (max-width: $desktop-s) {
+    width: 33%;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet-m) {
+    width: 50%;
+  }
+
+  @media (max-width: $mobile-s) {
+    width: 100%;
+  }
+}
+
+.badge {
+  display: block;
+  margin: 0 auto;
+  height: 125px;
 }
