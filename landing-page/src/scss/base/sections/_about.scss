@@ -1,0 +1,70 @@
+.container_about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 140px;
+
+  @media (max-width: $desktop-l) {
+    padding: 40px;
+  }
+
+  @media (max-width: $mobile-s) {
+    padding: 0;
+  }
+
+  > * {
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  article {
+    height: auto;
+    width: 45%;
+    padding: 60px 44px;
+    margin-right: 2vw;
+    background: $color-white;
+    flex-grow: 1;
+
+    @media (max-width: $tablet-l) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+
+.about-carousel {
+  overflow: hidden;
+  height: 500px;
+  width: 42%;
+
+  @media (max-width: $tablet-l) {
+    height: 600px;
+    width: 100%;
+  }
+
+  div {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slick-prev {
+    left: 20px;
+
+    @media (max-width: $tablet-m) {
+      left: 0;
+    }
+  }
+
+  .slick-next {
+    right: 20px;
+
+    @media (max-width: $tablet-m) {
+      right: 0;
+    }
+  }
+}

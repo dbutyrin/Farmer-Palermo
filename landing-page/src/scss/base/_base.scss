@@ -7,13 +7,13 @@
 }
 
 .body {
-  padding: 20px 0 64px;
+  min-width: 320px;
   font-family: $main-font;
   font-size: 1.8rem;
   line-height: 1.4;
   font-weight: 300;
   color: $color-black;
-  background-color: $color-white;
+  background-color: $color-background;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
@@ -27,8 +27,9 @@
   }
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: $secondary-font;
+  text-align: center;
 }
 
 a {
@@ -58,4 +59,19 @@ button {
 .container {
   max-width: 1920px;
   padding: 0 100px;
+
+  @media (max-width: $tablet-m) {
+    padding: 0;
+  }
+}
+
+.carousel {
+  position: relative;
+
+  .slide {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }

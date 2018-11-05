@@ -1,0 +1,43 @@
+.container_reviews {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $desktop-l) {
+    padding: 20px;
+  }
+
+  @media (max-width: $tablet-m) {
+    padding: 0;
+  }
+}
+
+.reviews-carousel {
+  width: 100%;
+
+  .slide {
+    article {
+      margin: 20px;
+      padding: 40px;
+      text-align: left;
+      min-height: 325px;
+      background: $color-white;
+      border-radius: 6px;
+      box-shadow: 0 2px 18px 0 rgba(0, 0, 0, .04);
+
+      @media (max-width: $tablet-l) {
+        padding: 20px;
+        min-height: 235px;
+      }
+
+      @media (max-width: $mobile-s) {
+        padding: 10px;
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: -50px;
+  }
+}

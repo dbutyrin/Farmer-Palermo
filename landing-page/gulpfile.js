@@ -52,7 +52,7 @@ gulp.task(
     'set-env:prod',
     gulp.parallel('lint:style', 'lint:script'),
     gulp.parallel('build:style-critical', 'build:style-main', 'build:script', 'build:svg-sprite'),
-    gulp.parallel('build:img', 'build:template', 'build:php', 'build:fonts', 'build:support-files')
+    gulp.parallel('build:template', 'build:php', 'build:fonts', 'build:support-files')
   )
 );
 
@@ -62,7 +62,7 @@ gulp.task(
     'set-env:dev',
     gulp.parallel('lint:style', 'lint:script'),
     gulp.parallel('build:style-critical', 'build:style-main', 'build:script', 'build:svg-sprite'),
-    gulp.parallel('build:img', 'build:template', 'build:php', 'build:fonts', 'build:support-files')
+    gulp.parallel('build:template', 'build:php', 'build:fonts', 'build:support-files')
   )
 );
 
@@ -72,7 +72,6 @@ gulp.task('watch', function () {
   gulp.watch(config.path.watch.supportFiles, gulp.series('build:support-files')).on('unlink', helpers.removeDeletedFile);
   gulp.watch(config.path.watch.style, gulp.series('lint:style', gulp.parallel('build:style-critical', 'build:style-main')));
   gulp.watch(config.path.watch.script, gulp.series('lint:script', 'build:script'));
-  gulp.watch(config.path.watch.image, gulp.series('build:img')).on('unlink', helpers.removeDeletedFile);
   gulp.watch(config.path.watch.fonts, gulp.series('build:fonts')).on('unlink', helpers.removeDeletedFile);
   gulp.watch(config.path.watch.svgSprite, gulp.series('build:svg-sprite'));
 });
