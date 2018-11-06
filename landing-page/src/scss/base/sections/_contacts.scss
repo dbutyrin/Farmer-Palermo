@@ -5,6 +5,10 @@
   @media (max-width: $tablet-l) {
     flex-direction: column;
   }
+
+  h3 {
+    width: 100%;
+  }
 }
 
 .form {
